@@ -1,13 +1,15 @@
-import { CameraType, CameraView, useCameraPermissions } from 'expo-camera';
+import { BarcodeScanningResult, CameraType, CameraView, useCameraPermissions } from 'expo-camera';
 import { useState } from 'react';
 import { View, Text, StyleSheet , Button } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Tab() {
-  const [facing , setFacing] = useState<CameraType>('front')
+  const [facing , setFacing] = useState<CameraType>('back')
   const [permission , requestPermission] =  useCameraPermissions();
   
-
+  const barcodeHandler = (scannedResult:BarcodeScanningResult) => {
+        console.log(scannedResult.data)
+  }
 
   if(!permission) {
     // Loading camera permissions
@@ -28,7 +30,7 @@ export default function Tab() {
     <SafeAreaView style={styles.container}>
           <View style={styles.scannerContainer}>
              <Text style={styles.scannerHeader}>Scan the barcode</Text>
-             <CameraView style={styles.camera} facing={facing}>
+             <CameraView onBarcodeScanned={(data) => {barcodeHandler(data)}} style={styles.camera} facing={facing}>
 
              </CameraView>
           </View>
@@ -55,6 +57,7 @@ const styles = StyleSheet.create({
     letterSpacing: .4
   },
   camera: {
+    marginTop: 20,
     height: "80%",
   }
 });
