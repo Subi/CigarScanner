@@ -23,10 +23,10 @@ const styles =  StyleSheet.create({
     textInputContainer: {
         backgroundColor: 'white',
         padding: 13,
-        flex: .85,
+        flex: 1,
         shadowColor: 'black',
         shadowOffset: {width: 0 , height: 1},
-        borderRadius: 15,
+        borderRadius: 12,
         flexDirection: 'row',
         alignItems: 'center',
         shadowOpacity: 0.3, // Shadow opacity

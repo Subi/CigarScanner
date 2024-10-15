@@ -18,7 +18,7 @@ export default function Header() {
 const styles =  StyleSheet.create({
     header: {
         paddingTop: 25,
-        paddingHorizontal: 30,
+        // paddingHorizontal: 30,
         justifyContent: "space-between",
         flexDirection: "row",
     },

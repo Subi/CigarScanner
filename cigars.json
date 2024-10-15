@@ -1,0 +1,28 @@
+{
+    "Cigars": [
+        {
+            "Name": "Oliva Serie G",
+            "Image": "https://www.holts.com/media//categoryimage//o/l/oliva-serie-g-figurado_1.png",
+            "Strength": "Medium",
+            "Country": "Nicaragua",
+            "Wrapper": "Cameroon",
+            "Shapes": ["Churchill", "Gordo", "Robusto", "Toro"]
+        },
+        {
+            "Name": "Don Diego",
+            "Image": "https://www.holts.com/media//categoryimage//d/o/don-diego-2.png",
+            "Strength": "Mild-Medium",
+            "Country": "Dominican Republic",
+            "Wrapper": "Connecticut Shade",
+            "Shapes": [" Robusto" , "Toro"]
+        },
+        {
+            "Name": "Ashton",
+            "Image": "https://www.holts.com/media//categoryimage//thumb/270x270/a/s/ashton-898.png",
+            "Strength": "Mild",
+            "Country": "Dominican Republic",
+            "Wrapper": "Conneticut Shade",
+            "Shapes": ["Belicoso" , "Churchill", "Corona" , "Gordo", "Pantela" , "Petit" , "Petit Corona" , "Lonsdale", "Robusto", "Toro", "Torpedo" ]
+        }
+    ]
+}
